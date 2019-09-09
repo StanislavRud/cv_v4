@@ -2,6 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5951dd70-11e1-403e-b7d1-a83c526d6c88" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DZ-1/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../app_kinopoisk_v2/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../app_kinopoisk_v2/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../app_kinopoisk_v2/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../app_kinopoisk_v2/style.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../app_kinopoisk_v2/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.scss" afterDir="false" />
@@ -16,7 +25,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1QHOdWwwjdkX3d2ctSPCP9q4RL8" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -64,6 +73,7 @@
       <workItem from="1567762996595" duration="8094000" />
       <workItem from="1568014934827" duration="4205000" />
       <workItem from="1568025135226" duration="9168000" />
+      <workItem from="1568037004601" duration="44000" />
     </task>
     <servers />
   </component>
