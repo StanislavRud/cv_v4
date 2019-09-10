@@ -151,7 +151,7 @@ body {
       align-items: center; }
       body .osn_container .block_home .block_with_text .home_text {
         width: 400px;
-        height: 150px; }
+        height: 50%; }
         body .osn_container .block_home .block_with_text .home_text h1 {
           display: block;
           position: absolute;
