@@ -398,5 +398,11 @@ body {
       .menu_list li a:hover:before, .menu_list li a:hover:after {
         width: 100%;
         transition-duration: .15s; } }
+@media only screen and (max-width: 1000px) {
+  body .osn_container .block_home {
+    height: 500px; } }
+@media only screen and (max-height: 480px) {
+  body .osn_container .block_home {
+    height: 500px; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -581,3 +581,14 @@ header {
     }
   }
 }
+@media only screen and (max-width: 1000px) {
+  body .osn_container .block_home {
+    height: 500px
+  }
+}
+
+@media only screen and (max-height: 480px) {
+  body .osn_container .block_home {
+    height: 500px
+  }
+}
