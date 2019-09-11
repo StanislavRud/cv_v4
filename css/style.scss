@@ -476,6 +476,7 @@ header {
 
             //margin-left: 15px;
             ul.menu_list {
+              overflow: hidden;
               margin-top: 14px;
               flex-direction: column;
               justify-content: left;
@@ -643,5 +644,10 @@ header {
         }
       }
     }
+  }
+}
+@media only screen and (max-height: 460px){
+  body header .main_header nav .min_menu ul.menu_list li a {
+    padding: 0.7rem;
   }
 }

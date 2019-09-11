@@ -330,6 +330,7 @@ body {
         display: block;
         margin-top: 15px; }
         body header .main_header nav .min_menu ul.menu_list {
+          overflow: hidden;
           margin-top: 14px;
           flex-direction: column;
           justify-content: left;
@@ -437,5 +438,8 @@ body {
     height: max-content; }
     body .osn_container li.Contacts a {
       height: 1px; } }
+@media only screen and (max-height: 460px) {
+  body header .main_header nav .min_menu ul.menu_list li a {
+    padding: 0.7rem; } }
 
 /*# sourceMappingURL=style.css.map */
