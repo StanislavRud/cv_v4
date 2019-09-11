@@ -331,7 +331,6 @@ body {
         display: block;
         margin-top: 15px; }
         body header .main_header nav .min_menu ul.menu_list {
-          overflow: hidden;
           margin-top: 14px;
           flex-direction: column;
           justify-content: left;
@@ -417,7 +416,8 @@ body {
         display: block;
         margin-left: 0;
         margin-right: 10px;
-        border-radius: 5px; }
+        border-radius: 5px;
+        align-items: flex-start; }
   body .osn_container li.work_experience .chudo img {
     display: none; }
   body .osn_container li.work_experience .chudo .chudo_text {
@@ -428,7 +428,8 @@ body {
     body .osn_container li.work_experience .chudo .chudo_text img {
       display: block;
       margin-left: 0;
-      margin-right: 10px; }
+      margin-right: 10px;
+      align-items: flex-start; }
   body .osn_container li.education a {
     height: 40px; }
   body .osn_container li.education .education_main_container h2 {
