@@ -307,6 +307,7 @@ header {
       padding: 5px;
       img {
         width: 30%;
+        margin-right: 5px;
       }
     }
   }
@@ -647,7 +648,12 @@ header {
   }
 }
 @media only screen and (max-height: 460px){
-  body header .main_header nav .min_menu ul.menu_list li a {
-    padding: 0.7rem;
+  body header .main_header nav .min_menu ul.menu_list {
+    width: max-content;
+    li a {
+      padding: 0.7rem;
+      width: 100%;
+    }
   }
+
 }
