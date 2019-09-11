@@ -186,6 +186,8 @@ body {
         backdrop-filter: blur(10px);
         background-color: rgba(255, 255, 255, 0.5);
         margin: 3em; }
+        body .osn_container .work_experience .factor .factor_text img {
+          display: none; }
     body .osn_container .work_experience .chudo {
       background-image: url("../img/chudomarket.jpg"); }
       body .osn_container .work_experience .chudo .chudo_text {
@@ -195,6 +197,8 @@ body {
         backdrop-filter: blur(10px);
         background-color: rgba(255, 255, 255, 0.5);
         margin: 3em; }
+        body .osn_container .work_experience .chudo .chudo_text img {
+          display: none; }
   body .osn_container li.education a {
     display: block;
     content: "";
@@ -388,6 +392,8 @@ body {
     background-position-x: center; }
     body .osn_container li.my_skills a {
       height: 68px; }
+    body .osn_container li.my_skills h2 {
+      margin: 0 0 1rem; }
     body .osn_container li.my_skills .my_skills_container ul {
       margin: 0;
       padding: 5px;
@@ -396,11 +402,40 @@ body {
     height: 40px; }
   body .osn_container li.work_experience .factor, body .osn_container li.work_experience .chudo {
     border-radius: 0; }
-  body .osn_container li.work_experience .factor .factor_text {
-    margin: 0;
-    padding: 10px; }
+  body .osn_container li.work_experience .factor {
+    margin-bottom: 5px; }
+    body .osn_container li.work_experience .factor img {
+      display: none; }
+    body .osn_container li.work_experience .factor .factor_text {
+      margin: 0;
+      padding: 10px;
+      display: flex;
+      flex-flow: wrap; }
+      body .osn_container li.work_experience .factor .factor_text img {
+        display: block;
+        margin-left: 0;
+        margin-right: 10px;
+        border-radius: 5px; }
+  body .osn_container li.work_experience .chudo img {
+    display: none; }
   body .osn_container li.work_experience .chudo .chudo_text {
     margin: 0;
-    padding: 10px; } }
+    padding: 10px;
+    display: flex;
+    flex-flow: wrap; }
+    body .osn_container li.work_experience .chudo .chudo_text img {
+      display: block;
+      margin-left: 0;
+      margin-right: 10px; }
+  body .osn_container li.education a {
+    height: 40px; }
+  body .osn_container li.education .education_main_container h2 {
+    margin-top: 0; }
+  body .osn_container li.education .education_main_container .khai .education_khai, body .osn_container li.education .education_main_container .khai .telesens_academy, body .osn_container li.education .education_main_container .khai .nt_school, body .osn_container li.education .education_main_container .khai .a_level {
+    margin-bottom: 5px; }
+  body .osn_container li.Contacts {
+    height: max-content; }
+    body .osn_container li.Contacts a {
+      height: 1px; } }
 
 /*# sourceMappingURL=style.css.map */

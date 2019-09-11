@@ -254,6 +254,9 @@ header {
         backdrop-filter: blur(10px);
         background-color: rgba(255, 255, 255, 0.5);
         margin: 3em;
+        img {
+          display: none;
+        }
       }
     }
     .chudo {
@@ -266,6 +269,9 @@ header {
         backdrop-filter: blur(10px);
         background-color: rgba(255, 255, 255, 0.5);
         margin: 3em;
+        img {
+          display: none;
+        }
       }
     }
   }
@@ -424,45 +430,6 @@ header {
   content: "\ea10";
 }
 
-
-
-//@media (min-width: 601px) {
-//  .menu_list {
-//    display: flex;
-//    li {
-//      flex-grow: 1;
-//      a {
-//        position: relative;
-//        overflow: hidden;
-//      }
-//
-//      a:before, a:after{
-//        content: "";
-//        width: 0;
-//        height: 3px;
-//        background-color: #0089ff;
-//
-//        will-change: width;
-//        transition: width .05s ease-out;
-//
-//        position: absolute;
-//        bottom: 0;
-//      }
-//      a:before{
-//        left: 50%;
-//        transform: translateX(-50%);
-//      }
-//      a:after{
-//        right: 50%;
-//        transform: translateX(50%);
-//      }
-//      a:hover:before, a:hover:after{
-//        width: 100%;
-//        transition-duration: .15s;
-//      }
-//    }
-//  }
-//}
 @media only screen and (max-width: 1000px) {
   body .osn_container .block_home {
     height: 500px
@@ -600,6 +567,9 @@ header {
         a {
           height: 68px;
         }
+        h2 {
+          margin: 0 0 1rem;
+        }
         .my_skills_container {
           ul {
             margin: 0;
@@ -617,16 +587,59 @@ header {
           border-radius: 0;
         }
         .factor{
+          margin-bottom: 5px;
+          img {
+            display: none;
+          }
           .factor_text{
             margin: 0;
             padding: 10px;
+            display: flex;
+            flex-flow: wrap;
+            img {
+              display: block;
+              margin-left: 0;
+              margin-right: 10px;
+              border-radius: 5px;
+            }
           }
         }
         .chudo {
+          img {
+            display: none;
+          }
           .chudo_text {
             margin: 0;
             padding: 10px;
+            display: flex;
+            flex-flow: wrap;
+            img {
+              display: block;
+              margin-left: 0;
+              margin-right: 10px;
+            }
           }
+        }
+      }
+      li.education {
+        a {
+          height: 40px;
+        }
+        .education_main_container{
+          h2{
+            margin-top: 0;
+          }
+          .khai {
+            .education_khai, .telesens_academy, .nt_school, .a_level {
+              margin-bottom: 5px;
+            }
+          }
+        }
+      }
+      li.Contacts {
+        height: max-content;
+        a{
+          height: 1px;
         }
       }
     }
