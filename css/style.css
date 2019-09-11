@@ -372,6 +372,35 @@ body {
         opacity: 0;
         z-index: 2; }
       body header .main_header nav .min_menu input[type="checkbox"]:checked ~ ul.menu_list {
-        transform: none; } }
+        transform: none; }
+  body .osn_container li.About_me a {
+    height: 65px; }
+  body .osn_container li.About_me h2 {
+    margin-top: 0; }
+  body .osn_container li.About_me .container_about_me {
+    border-radius: 0; }
+    body .osn_container li.About_me .container_about_me .container_about_me_text {
+      margin: 0;
+      width: 100%; }
+  body .osn_container li.my_skills {
+    padding: 5px;
+    margin-top: 0;
+    background-position-x: center; }
+    body .osn_container li.my_skills a {
+      height: 68px; }
+    body .osn_container li.my_skills .my_skills_container ul {
+      margin: 0;
+      padding: 5px;
+      width: 100%; }
+  body .osn_container li.work_experience a {
+    height: 40px; }
+  body .osn_container li.work_experience .factor, body .osn_container li.work_experience .chudo {
+    border-radius: 0; }
+  body .osn_container li.work_experience .factor .factor_text {
+    margin: 0;
+    padding: 10px; }
+  body .osn_container li.work_experience .chudo .chudo_text {
+    margin: 0;
+    padding: 10px; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -494,86 +494,141 @@ header {
 }
 
 @media only screen and (max-width: 800px) {
-  body header {
-    height: 50px;
+  body {
+    header {
+      height: 50px;
 
-    .main_header {
-      justify-content: left;
+      .main_header {
+        justify-content: left;
 
-      nav {
-        .min_menu {
-          display: block;
-          margin-top: 15px;
-          //border: 1px solid white;
+        nav {
+          .min_menu {
+            display: block;
+            margin-top: 15px;
+            //border: 1px solid white;
 
-          //margin-left: 15px;
-          ul.menu_list {
-            margin-top: 14px;
-            flex-direction: column;
-            justify-content: left;
-            position: absolute;
-            width: 190px;
-            background-color: black;
-            //box-shadow: 0 0 10px #85888C;
-            transform-origin: 0% 0%;
-            transform: translate(-100%, 0);
-            transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-            li {
-              a {
-                padding: 1rem;
+            //margin-left: 15px;
+            ul.menu_list {
+              margin-top: 14px;
+              flex-direction: column;
+              justify-content: left;
+              position: absolute;
+              width: 190px;
+              background-color: black;
+              //box-shadow: 0 0 10px #85888C;
+              transform-origin: 0% 0%;
+              transform: translate(-100%, 0);
+              transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+              li {
+                a {
+                  padding: 1rem;
+                }
               }
             }
-          }
 
-          span {
+            span {
+              margin-left: 25px;
+              display: flex;
+              width: 29px;
+              height: 2px;
+              margin-bottom: 5px;
+              position: relative;
+              background: #ffffff;
+              border-radius: 3px;
+              z-index: 2;
+              transform-origin: 5px 0px;
+              transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+            }
+            span:first-child {
+              transform-origin: 0% 0%;
+            }
+            span:nth-last-child(2){
+              transform-origin: 0% 100%;
+            }
+
+            input:checked ~ span {
+              opacity: 1;
+              transform: rotate(45deg) translate(4px, 0px);
+              background: #36383F;
+            }
+            input:checked ~ span:nth-last-child(3){
+              opacity: 0;
+              transform: rotate(0deg) scale(0.2, 0.2);
+            }
+            input:checked ~ span:nth-last-child(2){
+              transform: rotate(-45deg) translate(0px, 8px);
+            }
+          }
+          .min_menu input {
             margin-left: 25px;
             display: flex;
-            width: 29px;
-            height: 2px;
-            margin-bottom: 5px;
-            position: relative;
-            background: #ffffff;
-            border-radius: 3px;
+            width: 30px;
+            height: 18px;
+            position: absolute;
+            cursor: pointer;
+            opacity: 0;
             z-index: 2;
-            transform-origin: 5px 0px;
-            transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-            background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-            opacity 0.55s ease;
           }
-          span:first-child {
-            transform-origin: 0% 0%;
+          .min_menu input[type="checkbox"]:checked ~ ul.menu_list {
+            transform: none;
           }
-          span:nth-last-child(2){
-            transform-origin: 0% 100%;
+        }
+      }
+    }
+    .osn_container{
+      li.About_me{
+        a{
+          height: 65px;
+        }
+        h2{
+          margin-top: 0;
+        }
+        .container_about_me {
+          border-radius: 0;
+          .container_about_me_text {
+            margin: 0;
+            width: 100%;
+          }
+        }
+      }
+      li.my_skills {
+        padding: 5px;
+        margin-top: 0;
+        background-position-x: center;
+        a {
+          height: 68px;
+        }
+        .my_skills_container {
+          ul {
+            margin: 0;
+            padding: 5px;
+            width: 100%;
           }
 
-          input:checked ~ span {
-            opacity: 1;
-            transform: rotate(45deg) translate(4px, 0px);
-            background: #36383F;
-          }
-          input:checked ~ span:nth-last-child(3){
-            opacity: 0;
-            transform: rotate(0deg) scale(0.2, 0.2);
-          }
-          input:checked ~ span:nth-last-child(2){
-            transform: rotate(-45deg) translate(0px, 8px);
+        }
+      }
+      li.work_experience {
+        a{
+          height: 40px;
+        }
+        .factor, .chudo{
+          border-radius: 0;
+        }
+        .factor{
+          .factor_text{
+            margin: 0;
+            padding: 10px;
           }
         }
-        .min_menu input {
-          margin-left: 25px;
-          display: flex;
-          width: 30px;
-          height: 18px;
-          position: absolute;
-          cursor: pointer;
-          opacity: 0;
-          z-index: 2;
-        }
-        .min_menu input[type="checkbox"]:checked ~ ul.menu_list {
-          transform: none;
+        .chudo {
+          .chudo_text {
+            margin: 0;
+            padding: 10px;
           }
         }
+      }
     }
   }
 }
