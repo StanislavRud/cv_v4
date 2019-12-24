@@ -235,6 +235,25 @@ body {
     body .osn_container li.education .education_khai img, body .osn_container li.education .telesens_academy img, body .osn_container li.education .nt_school img, body .osn_container li.education .a_level img {
       width: 15%;
       margin-right: 5px; }
+  body .osn_container .slider {
+    width: 450px;
+    height: 450px;
+    margin: 0 auto; }
+    body .osn_container .slider .myWorks img {
+      width: 100%; }
+    body .osn_container .slider div.prevSlide, body .osn_container .slider div.nextSlide {
+      width: 50px;
+      height: 50px;
+      border: 1px solid black;
+      position: relative; }
+    body .osn_container .slider div.prevSlide:hover, body .osn_container .slider div.nextSlide:hover {
+      cursor: pointer; }
+    body .osn_container .slider div.prevSlide {
+      top: calc(-50% + -100px);
+      left: -50%; }
+    body .osn_container .slider div.nextSlide {
+      top: calc(-50% - 50px);
+      left: 150%; }
   body .osn_container .Contacts {
     height: 600px;
     margin-top: 35px;
