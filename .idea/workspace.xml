@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5951dd70-11e1-403e-b7d1-a83c526d6c88" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../DZ-1/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../app_kinopoisk_v2/index.html" afterDir="false" />
@@ -40,15 +41,20 @@
       <change beforePath="$PROJECT_DIR$/../CV_v3/img/viber-brands.svg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../CV_v3/img/web-background.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../CV_v3/img/web-background.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../CV_v3/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../CV_v3/index.html" afterDir="false" />
+=======
+>>>>>>> 450fedc586c305dc4d8c8573bf388301ba8b05f0
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../DZ-1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../DZ-1/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../DZ-1/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/../DZ-1/debug.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../app_kinopoisk/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/../app_kinopoisk/script.js" afterDir="false" />
+=======
+>>>>>>> 450fedc586c305dc4d8c8573bf388301ba8b05f0
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -128,7 +134,11 @@
       <workItem from="1568970401450" duration="18000" />
       <workItem from="1571730333631" duration="2511000" />
       <workItem from="1571850928303" duration="146000" />
+<<<<<<< HEAD
       <workItem from="1577189602261" duration="6659000" />
+=======
+      <workItem from="1571851369575" duration="5339000" />
+>>>>>>> 450fedc586c305dc4d8c8573bf388301ba8b05f0
     </task>
     <servers />
   </component>
