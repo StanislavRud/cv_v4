@@ -1,22 +1,36 @@
-let prevButton = document.querySelector('.prevSlide');
-let nextSlide = document.querySelector('.nextSlide');
-let img = document.createElement('img');
+let prevSlideButton = document.querySelector('.prevSlide');
+let nextSlideButton = document.querySelector('.nextSlide');
+let img = document.querySelector('.sliderImg');
+let arrImg = ["./img/elem1.jpg", "./img/elem2.jpg", "./img/elem3.jpg", "./img/elem4.jpg" ];
+let currentImg = 0;
+function clickNext () {
+    function makeCurrentImgNext() {
+        return function () {
+            if (currentImg === 4) {
+                return currentImg = 0;
+            } else
+                return currentImg++;
+        }
+    }
 
-let arr = ["src=./img/elem1.jpg", "src=./img/elem2.jpg", "src=./img/elem3.jpg", "src=./img/elem4.jpg" ];
-
-// nextSlide.onclick = function () {
-//     for (i=0, i<arr.length; i++;) {
-//         img.src = arr[i];
-//         console.log(img.src)
-//     }
-// }
-let clickNext = function () {
-    console.log('next img')
+    let curImg = makeCurrentImgNext();
+    img.src = arrImg[curImg()];
+    console.log(img.src);
 }
 
-let clickPrev = function () {
-    console.log('prev img')
+function clickPrev (){
+    function makeCurrentImgPrev() {
+        if (currentImg <= 0) {
+            return currentImg = 3;
+        } else return function () {
+            return currentImg--;
+            }
+
+    }
+    let curImg = makeCurrentImgPrev();
+    img.src = arrImg[curImg()];
+    console.log(img.src);
 }
 
-nextSlide.addEventListener('click', clickNext);
-prevButton.addEventListener('click', clickPrev);
+nextSlideButton.addEventListener('click', clickNext);
+prevSlideButton.addEventListener('click', clickPrev);
