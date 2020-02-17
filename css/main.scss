@@ -32,11 +32,12 @@ a {
   text-decoration: none;
   color: white;
   font-family: 'Titillium Web', sans-serif;
+  //font-size: 20px;
 }
 
 li {
   list-style: none;
-  font-size: 20px;
+  padding: 10px 0 10px;
 }
 
 body {
@@ -68,9 +69,13 @@ body {
 
         ul.menu_list {
           display: flex;
+          //align-items: center;
+
 
           li {
             flex-grow: 1;
+            padding: 0;
+            height: 100%;
 
             a {
               position: relative;
@@ -80,6 +85,7 @@ body {
               will-change: color;
               transition: color .25s ease-out;
               font-weight: 700;
+              font-size: large;
               color: #fff;
               text-decoration: none;
               text-transform: uppercase;
@@ -130,10 +136,9 @@ body {
       a {
         display: block;
         content: "";
-        //height: 90px;
-        //margin: -50px 0 0;
+
         height: 100px;
-        margin: -75px 0 0;
+        margin-top: -75px;
       }
     }
 
@@ -146,10 +151,18 @@ body {
       background-size: cover;
       margin-top: 135px;
 
+      a {
+        display: block;
+        content: "";
+        height: 99px;
+        margin-top: -74px;
+      }
+
       .block_with_text {
         display: flex;
         justify-content: flex-end;
         align-items: center;
+        height: calc(100% - 100px);
 
         .home_text {
           width: 400px;
@@ -204,18 +217,32 @@ body {
       max-width: 1100px;
       margin: 0 auto;
       text-align: center;
+      padding: 10px 0 10px;
+
+      a {
+        display: block;
+        content: "";
+        height: 100px;
+        margin: -75px 0 0;
+      }
 
     }
 
     .About_me {
-      margin-top: 45px;
       background-image: url("https://images.freeimages.com/images/large-previews/01a/technology-background-1632715.jpg");
       background-size: cover;
       padding-bottom: 15px;
-      //h2 {
-      //  color: white;
-      //  text-shadow: 3px 4px 5px #000;
-      //}
+
+      .about_me {
+        padding-top: 20px;
+      }
+
+      a {
+        display: block;
+        content: "";
+        height: 55px;
+        margin: -58px 0 0;
+      }
 
       .container_about_me {
         display: flex;
@@ -249,25 +276,34 @@ body {
       background-image: url("../img/Skills2.jpg");
       background-size: cover;
       background-position-x: center;
-      padding: 15px;
+
+      a {
+        display: block;
+        content: "";
+        height: 74px;
+        margin-top: -74px;
+      }
 
       //h2 {
       //  margin: 0;
       //}
-      .my_skills_container {
+      .skills {
+        padding-top: 20px;
 
-        ul {
-          width: 60%;
-          margin: 1rem auto;
-          text-align: left;
-          border-radius: 5px;
-          padding: 1rem 2rem;
-          line-height: 1.5;
-          backdrop-filter: blur(10px);
-          background-color: rgba(255, 255, 255, 0.5);
+        .my_skills_container {
+          ul {
+            width: 60%;
+            margin: 1rem auto;
+            text-align: left;
+            border-radius: 5px;
+            padding: 1rem 2rem;
+            line-height: 1.5;
+            backdrop-filter: blur(10px);
+            background-color: rgba(255, 255, 255, 0.5);
 
-          li {
-            margin: 10px 0;
+            li {
+              margin: 10px 0;
+            }
           }
         }
       }
@@ -278,6 +314,14 @@ body {
       background-image: url("./../img/work_experience.jpg");
       background-size: 100% 100%;
       padding-bottom: 15px;
+
+      a {
+        display: block;
+        content: "";
+        height: 60px;
+        margin: -60px 0 0;
+      }
+
       //h2 {
       //  color: white;
       //  text-shadow: 3px 4px 5px #000;
@@ -338,6 +382,9 @@ body {
     }
 
     li.education {
+      background-image: url("../img/bg_education.jpg");
+      background-size: cover;
+
       a {
         display: block;
         content: "";
@@ -346,8 +393,6 @@ body {
       }
 
       .education_main_container {
-        background-image: url("../img/bg_education.jpg");
-        background-size: cover;
 
         .khai {
           padding: 15px 0;
@@ -384,9 +429,10 @@ body {
     li.my_works {
       background-image: url("./../img/my_works.jpg");
       background-size: 100% 100%;
+
       .slider {
         //position: relative;
-        width: 80%;
+        max-width: 1100px;
         height: 700px;
         padding: 10px;
         //overflow:hidden;
@@ -403,17 +449,27 @@ body {
           transition: all 0.5s cubic-bezier(0.4, 0, 1, 1);
           background-size: 100% auto;
           border-radius: 10px;
+
+          a {
+            display: block;
+            text-align: center;
+            height: 100%;
+          }
         }
+
         &:hover div.prevSlide {
           opacity: 1;
-          left: 12%;
+          left: -45%;
         }
+
         &:hover div.nextSlide {
           opacity: 1;
-          right: 12%;
+          right: -45%;
         }
 
         div.prevSlide, div.nextSlide {
+          position: relative;
+          top: -40%;
           width: 50px;
           height: 50px;
           border-radius: 50%;
@@ -425,34 +481,39 @@ body {
           transition: all 0.5s;
 
         }
+
         div.prevSlide {
-          position: absolute;
-          top: 503%;
-          left: 18%;
+          left: -40%;
 
         }
+
         div.nextSlide {
-          position: absolute;
-          top: 503%;
-          right: 18%;
+          top: calc(-40% - 50px);
+          right: -40%;
         }
+
         div.prevSlide:hover {
-          box-shadow: 0 0 10px rgba(0,0,0,0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
           cursor: pointer;
           background-color: #ffffffcc;
         }
+
         div.nextSlide:hover {
-          box-shadow: 0 0 10px rgba(0,0,0,0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
           cursor: pointer;
           background-color: #ffffffcc;
         }
+
         .slide_points {
+          position: relative;
           display: flex;
           justify-content: space-around;
           align-items: center;
           content: '';
           width: 100px;
           height: 20px;
+          top: -11%;
+
           .point {
             width: 10px;
             height: 10px;
@@ -461,12 +522,13 @@ body {
             border-radius: 50%;
             border: 2px solid black;
           }
+
           .select {
-            background-color: #0066b4;
+            background-color: #fff;
           }
         }
 
-        .navigation_slider{
+        .navigation_slider {
           height: 10%;
           width: 20%;
           display: flex;
@@ -479,12 +541,13 @@ body {
 
 
     .Contacts {
-      height: 600px;
-      margin-top: 75px;
       background: url("../img/web-background.jpg");
 
       a {
-        height: 40px;
+        display: block;
+        content: "";
+        height: 75px;
+        margin: -75px 0 0;
       }
 
       .container_contacts {
@@ -611,18 +674,6 @@ body {
   content: "\ea10";
 }
 
-@media only screen and (max-width: 1000px) {
-  body .osn_container .block_home {
-    height: 500px
-  }
-}
-
-@media only screen and (max-height: 480px) {
-  body .osn_container .block_home {
-    height: 500px
-  }
-}
-
 @media only screen and (max-width: 1048px) {
   body {
     header {
@@ -641,24 +692,71 @@ body {
   }
 }
 
-@media only screen and (max-width: 887px) {
+@media only screen and (max-width: 1168px) {
+  body {
+    header {
+      .main_header {
+        nav {
+          ul.menu_list {
+            li {
+              a {
+                font-size: medium;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width: 1000px) {
+  body .osn_container .block_home {
+    height: 500px
+  }
+}
+
+@media only screen and (max-height: 480px) {
+  body .osn_container .block_home {
+    height: 500px
+  }
+}
+
+
+@media only screen and (max-width: 893px) {
+
   body {
     header {
       height: 50px;
 
       .main_header {
         justify-content: left;
+        height: 100%;
 
         nav {
-          .min_menu {
-            display: block;
-            margin-top: 15px;
-            //border: 1px solid white;
+          position: relative;
+          left: 20px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
 
-            //margin-left: 15px;
+          .min_menu {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+
+
             ul.menu_list {
               //overflow: hidden;
-              margin-top: 14px;
+              //margin-top: 14px;
+              top: 50px;
+              left: -100px;
+
               flex-direction: column;
               justify-content: left;
               position: absolute;
@@ -677,7 +775,7 @@ body {
             }
 
             span {
-              margin-left: 25px;
+              //margin-left: 25px;
               display: flex;
               width: 29px;
               height: 2px;
@@ -717,29 +815,36 @@ body {
           }
 
           .min_menu input {
-            margin-left: 25px;
+            //margin-left: 25px;
             display: flex;
             width: 30px;
-            height: 18px;
+            height: 30px;
             position: absolute;
             cursor: pointer;
             opacity: 0;
-            z-index: 2;
+            z-index: 5;
           }
 
           .min_menu input[type="checkbox"]:checked ~ ul.menu_list {
             transform: none;
+            left: -20px;
           }
         }
       }
     }
 
     .osn_container {
-      li.About_me {
+      li.block_home {
+        margin-top: 50px;
+
         a {
-          height: 74px;
-          margin: -38px 0px 0px;
+          height: 100px;
+          margin: -100px 0px 0px;
         }
+      }
+
+
+      li.About_me {
 
         h2 {
           margin-top: 0;
@@ -769,20 +874,21 @@ body {
           margin: 0 0 1rem;
         }
 
-        .my_skills_container {
-          ul {
-            margin: 0;
-            padding: 5px;
-            width: 100%;
-          }
+        .skills {
+          .my_skills_container {
+            ul {
+              margin: 0;
+              padding: 5px;
+              width: 100%;
+            }
 
+          }
         }
+
+
       }
 
       li.work_experience {
-        a {
-          height: 100px;
-        }
 
         .factor, .chudo {
           border-radius: 0;
@@ -833,9 +939,8 @@ body {
       }
 
       li.education {
-        a {
-          height: 40px;
-        }
+        padding: 5px;
+        //margin-top: 20px;
 
         .education_main_container {
           h2 {
@@ -850,19 +955,40 @@ body {
         }
       }
 
+      li.my_works {
+        padding: 5px;
+
+        .slider {
+          padding: 0;
+          width: 100%;
+
+          .myWorks {
+            background-size: cover;
+          }
+
+          div.prevSlide, div.nextSlide {
+            top: -40%;
+            opacity: 1.0;
+          }
+
+          div.nextSlide {
+            top: calc(-40% - 50px);
+          }
+        }
+      }
+
       li.Contacts {
         height: max-content;
 
-        a {
-          height: 24px;
-          margin: -50px 0px 0px;
-        }
-
         .container_contacts {
-          li {
-            p {
-              a {
-                font-size: 1.4rem;
+          padding: 5px;
+          ul {
+            width: 100%;
+            li {
+              p {
+                a {
+                  font-size: 1.4rem;
+                }
               }
             }
           }
@@ -873,21 +999,51 @@ body {
 }
 
 @media only screen and (max-width: 560px) {
-  h2 {
-    padding: 1rem 0;
-    width: 100%;
-  }
-  body .osn_container li.education .education_main_container .khai .education_khai {
-    padding: 10px;
+  .About_me, .my_skills, .work_experience, .education, .my_works, .Contacts {
+    padding: 0 !important;
 
-    img {
-      width: 20%;
+    .container {
+      padding: 5px;
+    }
+
+    h2 {
+      padding: 1rem 0;
+      width: 100%;
+      border-radius: 0;
     }
   }
 
-  body .osn_container .Contacts .container_contacts ul {
-    width: 100%;
-    border-radius: 0;
+  .my_skills {
+    padding: 0 !important;
+
+    .my_skills_container {
+      padding: 5px;
+
+      a {
+        margin: 0;
+      }
+
+      ul {
+        width: 100% !important;
+      }
+    }
+  }
+
+  .education {
+    .khai {
+      padding: 5px;
+    }
+  }
+
+  .Contacts {
+    .container_contacts {
+      padding: 5px;
+
+      ul {
+        width: 100%;
+      }
+    }
+
   }
 }
 
