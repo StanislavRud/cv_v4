@@ -40,7 +40,7 @@ body {
     background-color: #1a1a1a;
     z-index: 1; }
     body header .main_header {
-      max-width: 1100px;
+      max-width: 1366px;
       margin: 0 auto;
       display: flex;
       justify-content: space-around; }
@@ -137,31 +137,35 @@ body {
     max-width: 1100px;
     margin: 0 auto;
     text-align: center; }
-  body .osn_container .about_me .container_about_me {
-    display: flex;
-    padding: 5px;
-    background-image: url("../img/home2.jpg");
+  body .osn_container .About_me {
+    margin-top: 45px;
+    background-image: url("https://images.freeimages.com/images/large-previews/01a/technology-background-1632715.jpg");
     background-size: cover;
-    justify-content: flex-end;
-    border-radius: 15px; }
-    body .osn_container .about_me .container_about_me img {
-      height: 1rem;
+    padding-bottom: 15px; }
+    body .osn_container .About_me .container_about_me {
+      display: flex;
+      padding: 5px;
+      background-image: url("../img/home2.jpg");
+      background-size: cover;
+      justify-content: flex-end;
       border-radius: 15px; }
-    body .osn_container .about_me .container_about_me .container_about_me_text {
-      border-radius: 5px;
-      padding: 1rem;
-      line-height: 1.5;
-      backdrop-filter: blur(10px);
-      background-color: rgba(255, 255, 255, 0.5);
-      margin: 1em;
-      width: 600px;
-      text-align: left;
-      text-indent: 1.5em; }
+      body .osn_container .About_me .container_about_me img {
+        height: 1rem;
+        border-radius: 15px; }
+      body .osn_container .About_me .container_about_me .container_about_me_text {
+        border-radius: 5px;
+        padding: 1rem;
+        line-height: 1.5;
+        backdrop-filter: blur(10px);
+        background-color: rgba(255, 255, 255, 0.5);
+        margin: 1em;
+        width: 600px;
+        text-align: left;
+        text-indent: 1.5em; }
   body .osn_container .my_skills {
     background-image: url("../img/Skills2.jpg");
     background-size: cover;
     background-position-x: center;
-    margin-top: 30px;
     padding: 15px; }
     body .osn_container .my_skills .my_skills_container ul {
       width: 60%;
@@ -175,7 +179,9 @@ body {
       body .osn_container .my_skills .my_skills_container ul li {
         margin: 10px 0; }
   body .osn_container .work_experience {
-    margin-bottom: 10px; }
+    background-image: url("./../img/work_experience.jpg");
+    background-size: 100% 100%;
+    padding-bottom: 15px; }
     body .osn_container .work_experience .factor, body .osn_container .work_experience .chudo {
       display: flex;
       justify-content: space-between;
@@ -216,7 +222,7 @@ body {
     display: block;
     content: "";
     height: 75px;
-    margin: -50px 0 0; }
+    margin: -75px 0 0; }
   body .osn_container li.education .education_main_container {
     background-image: url("../img/bg_education.jpg");
     background-size: cover; }
@@ -235,28 +241,81 @@ body {
     body .osn_container li.education .education_khai img, body .osn_container li.education .telesens_academy img, body .osn_container li.education .nt_school img, body .osn_container li.education .a_level img {
       width: 15%;
       margin-right: 5px; }
-  body .osn_container .slider {
-    width: 450px;
-    height: 450px;
-    margin: 0 auto; }
-    body .osn_container .slider .myWorks img {
-      width: 100%; }
-    body .osn_container .slider div.prevSlide, body .osn_container .slider div.nextSlide {
-      width: 50px;
-      height: 50px;
-      border: 1px solid black;
-      position: relative; }
-    body .osn_container .slider div.prevSlide:hover, body .osn_container .slider div.nextSlide:hover {
-      cursor: pointer; }
-    body .osn_container .slider div.prevSlide {
-      top: calc(-50% + -100px);
-      left: -50%; }
-    body .osn_container .slider div.nextSlide {
-      top: calc(-50% - 50px);
-      left: 150%; }
+  body .osn_container li.my_works {
+    background-image: url("./../img/my_works.jpg");
+    background-size: 100% 100%; }
+    body .osn_container li.my_works .slider {
+      width: 80%;
+      height: 700px;
+      padding: 10px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      body .osn_container li.my_works .slider .myWorks {
+        width: 100%;
+        height: 95%;
+        background-image: url("./../img/elem1.jpg");
+        transition: all 0.5s cubic-bezier(0.4, 0, 1, 1);
+        background-size: 100% auto;
+        border-radius: 10px; }
+      body .osn_container li.my_works .slider:hover div.prevSlide {
+        opacity: 1;
+        left: 12%; }
+      body .osn_container li.my_works .slider:hover div.nextSlide {
+        opacity: 1;
+        right: 12%; }
+      body .osn_container li.my_works .slider div.prevSlide, body .osn_container li.my_works .slider div.nextSlide {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #ffffff78;
+        opacity: 0;
+        transition: all 0.5s; }
+      body .osn_container li.my_works .slider div.prevSlide {
+        position: absolute;
+        top: 503%;
+        left: 18%; }
+      body .osn_container li.my_works .slider div.nextSlide {
+        position: absolute;
+        top: 503%;
+        right: 18%; }
+      body .osn_container li.my_works .slider div.prevSlide:hover {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        cursor: pointer;
+        background-color: #ffffffcc; }
+      body .osn_container li.my_works .slider div.nextSlide:hover {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        cursor: pointer;
+        background-color: #ffffffcc; }
+      body .osn_container li.my_works .slider .slide_points {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        content: '';
+        width: 100px;
+        height: 20px; }
+        body .osn_container li.my_works .slider .slide_points .point {
+          width: 10px;
+          height: 10px;
+          background-color: black;
+          display: inline-block;
+          border-radius: 50%;
+          border: 2px solid black; }
+        body .osn_container li.my_works .slider .slide_points .select {
+          background-color: #0066b4; }
+      body .osn_container li.my_works .slider .navigation_slider {
+        height: 10%;
+        width: 20%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center; }
   body .osn_container .Contacts {
     height: 600px;
-    margin-top: 35px;
+    margin-top: 75px;
     background: url("../img/web-background.jpg"); }
     body .osn_container .Contacts a {
       height: 40px; }
@@ -352,7 +411,7 @@ body {
 @media only screen and (max-width: 1048px) {
   body header .main_header nav ul.menu_list li a {
     padding: 2rem 1rem; } }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 887px) {
   body header {
     height: 50px; }
     body header .main_header {

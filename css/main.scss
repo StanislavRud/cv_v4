@@ -51,7 +51,7 @@ body {
     z-index: 1;
 
     .main_header {
-      max-width: 1100px;
+      max-width: 1366px;
       margin: 0 auto;
       display: flex;
       justify-content: space-around;
@@ -207,7 +207,11 @@ body {
 
     }
 
-    .about_me {
+    .About_me {
+      margin-top: 45px;
+      background-image: url("https://images.freeimages.com/images/large-previews/01a/technology-background-1632715.jpg");
+      background-size: cover;
+      padding-bottom: 15px;
       //h2 {
       //  color: white;
       //  text-shadow: 3px 4px 5px #000;
@@ -220,6 +224,7 @@ body {
         background-size: cover;
         justify-content: flex-end;
         border-radius: 15px;
+
 
         img {
           height: 1rem;
@@ -244,7 +249,6 @@ body {
       background-image: url("../img/Skills2.jpg");
       background-size: cover;
       background-position-x: center;
-      margin-top: 30px;
       padding: 15px;
 
       //h2 {
@@ -270,7 +274,10 @@ body {
     }
 
     .work_experience {
-      margin-bottom: 10px;
+      //margin-bottom: 10px;
+      background-image: url("./../img/work_experience.jpg");
+      background-size: 100% 100%;
+      padding-bottom: 15px;
       //h2 {
       //  color: white;
       //  text-shadow: 3px 4px 5px #000;
@@ -335,7 +342,7 @@ body {
         display: block;
         content: "";
         height: 75px;
-        margin: -50px 0 0;
+        margin: -75px 0 0;
       }
 
       .education_main_container {
@@ -374,49 +381,106 @@ body {
       }
     }
 
-    .slider {
-      //position: relative;
-      width: 450px;
-      height: 450px;
-      //overflow:hidden;
-      margin: 0 auto;
+    li.my_works {
+      background-image: url("./../img/my_works.jpg");
+      background-size: 100% 100%;
+      .slider {
+        //position: relative;
+        width: 80%;
+        height: 700px;
+        padding: 10px;
+        //overflow:hidden;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
-      .myWorks {
-        //  position:relative;
-        //  width:10000px;
-        //  height:300px;
 
-        //height: 300px;
-        img {
+        .myWorks {
           width: 100%;
+          height: 95%;
+          background-image: url("./../img/elem1.jpg");
+          transition: all 0.5s cubic-bezier(0.4, 0, 1, 1);
+          background-size: 100% auto;
+          border-radius: 10px;
+        }
+        &:hover div.prevSlide {
+          opacity: 1;
+          left: 12%;
+        }
+        &:hover div.nextSlide {
+          opacity: 1;
+          right: 12%;
+        }
+
+        div.prevSlide, div.nextSlide {
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: #ffffff78;
+          opacity: 0;
+          transition: all 0.5s;
+
+        }
+        div.prevSlide {
+          position: absolute;
+          top: 503%;
+          left: 18%;
+
+        }
+        div.nextSlide {
+          position: absolute;
+          top: 503%;
+          right: 18%;
+        }
+        div.prevSlide:hover {
+          box-shadow: 0 0 10px rgba(0,0,0,0.5);
+          cursor: pointer;
+          background-color: #ffffffcc;
+        }
+        div.nextSlide:hover {
+          box-shadow: 0 0 10px rgba(0,0,0,0.5);
+          cursor: pointer;
+          background-color: #ffffffcc;
+        }
+        .slide_points {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          content: '';
+          width: 100px;
+          height: 20px;
+          .point {
+            width: 10px;
+            height: 10px;
+            background-color: black;
+            display: inline-block;
+            border-radius: 50%;
+            border: 2px solid black;
+          }
+          .select {
+            background-color: #0066b4;
+          }
+        }
+
+        .navigation_slider{
+          height: 10%;
+          width: 20%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
         }
       }
 
-      div.prevSlide, div.nextSlide {
-        width: 50px;
-        height: 50px;
-        border: 1px solid black;
-        position: relative;
-
-      }
-
-      div.prevSlide:hover, div.nextSlide:hover {
-        cursor: pointer;
-      }
-
-      div.prevSlide {
-        top: calc(-50% + -100px);
-        left: -50%;
-      }
-      div.nextSlide {
-        top: calc(-50% - 50px);
-        left: 150%;
-      }
     }
+
 
     .Contacts {
       height: 600px;
-      margin-top: 35px;
+      margin-top: 75px;
       background: url("../img/web-background.jpg");
 
       a {
@@ -577,7 +641,7 @@ body {
   }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 887px) {
   body {
     header {
       height: 50px;

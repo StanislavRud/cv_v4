@@ -1,40 +1,66 @@
 let prevSlideButton = document.querySelector('.prevSlide');
 let nextSlideButton = document.querySelector('.nextSlide');
-let img = document.querySelector('.sliderImg');
-let arrImg = ["./img/elem1.jpg", "./img/elem2.jpg", "./img/elem3.jpg", "./img/elem4.jpg" ];
+let img = document.querySelector('.myWorks');
+let arrImg = ["url(./img/elem1.jpg)", "url(./img/elem2.jpg)", "url(./img/elem3.jpg)", "url(./img/elem4.jpg)" ];
 let currentImg = 0;
 
+let points = document.querySelector('.slide_points');
+let div = document.createElement('div');
+
+
+
+window.onload = function create_points () {
+    for (let i = 0; i < arrImg.length; i++){
+        let div = document.createElement('div');
+        div.className = 'point';
+        points.appendChild(div)*[i];
+    }
+    points.firstElementChild.classList.add('select');
+};
+
 function clickNext () {
-    function makeCurrentImgNext() {
-        return function () {
-            if (currentImg === 4) {
-                return currentImg = 0;
-            } else
-                return currentImg++;
-        }
+    if (currentImg >= arrImg.length - 1) {
+        currentImg = 0;
+    } else
+    currentImg++;
+
+    img.style.backgroundImage = arrImg[currentImg];
+    paint_doter()
+}
+
+function paint_doter() {
+    let doter = document.querySelectorAll('.point');
+    doter[currentImg].classList.add('select');
+    if (currentImg === 0){
+        doter[3].classList.remove('select');
+        doter[1].classList.remove('select');
+        // doter[0].classList.remove('select');
+    } else if (currentImg === 3) {
+        doter[0].classList.remove('select');
+        doter[currentImg - 1].classList.remove('select');
+    }
+    else {
+        doter[currentImg - 1].classList.remove('select');
+        doter[currentImg + 1].classList.remove('select');
     }
 
-    let curImg = makeCurrentImgNext();
-    img.src = arrImg[curImg()];
-    console.log(img.src);
 }
 
 
 function clickPrev (){
-    function makeCurrentImgPrev() {
-        if (currentImg === 0) {
-            return currentImg = 3;
-        } else return function () {
-            return currentImg--;
-            }
-
-    }
-    let curImg = makeCurrentImgPrev();
-    img.src = arrImg[curImg()];
-    console.log(img.src);
+    if (currentImg < 1) {
+        currentImg = arrImg.length - 1;
+    } else
+        currentImg--;
+    img.style.backgroundImage = arrImg[currentImg];
+    paint_doter()
 }
 
 
+setInterval(clickNext, 6000);
 
 nextSlideButton.addEventListener('click', clickNext);
 prevSlideButton.addEventListener('click', clickPrev);
+
+
+
