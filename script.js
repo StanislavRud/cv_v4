@@ -1,7 +1,7 @@
 let prevSlideButton = document.querySelector('.prevSlide');
 let nextSlideButton = document.querySelector('.nextSlide');
 let img = document.querySelector('.myWorks');
-let arrImg = ["url(./img/elem1.jpg)", "url(./img/elem2.jpg)", "url(./img/elem3.jpg)", "url(./img/elem4.jpg)" ];
+let arrImg = ["url(./img/elem1.jpg)", "url(./img/elem2.jpg)", "url(./img/elem3.jpg)", "url(./img/elem4.jpg)", "url(./img/elem5.jpg)" ];
 let currentImg = 0;
 
 let points = document.querySelector('.slide_points');
@@ -32,7 +32,7 @@ function paint_doter() {
     let doter = document.querySelectorAll('.point');
     doter[currentImg].classList.add('select');
     if (currentImg === 0){
-        doter[3].classList.remove('select');
+        doter[arrImg.length - 1].classList.remove('select');
         doter[1].classList.remove('select');
         // doter[0].classList.remove('select');
     } else if (currentImg === 3) {
