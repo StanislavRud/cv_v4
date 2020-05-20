@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5951dd70-11e1-403e-b7d1-a83c526d6c88" name="Default Changelist" comment="">
+<<<<<<< HEAD
+      <change afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DZ-1/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../app_kinopoisk_v2/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../app_kinopoisk_v2/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../app_kinopoisk_v2/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../app_kinopoisk_v2/style.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../app_kinopoisk_v2/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CV_v2/CV_Rud_Stanislav.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../CV_v2/CV_Rud_Stanislav.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CV_v2/CV_Rud_Stanislav.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../CV_v2/CV_Rud_Stanislav.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CV_v2/CV_Rud_Stanislav2.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../CV_v2/CV_Rud_Stanislav2.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CV_v2/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/../CV_v2/debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CV_v3/css/fonts/icomoon.eot" beforeDir="false" afterPath="$PROJECT_DIR$/../CV_v3/css/fonts/icomoon.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CV_v3/css/fonts/icomoon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/../CV_v3/css/fonts/icomoon.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CV_v3/css/fonts/icomoon.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/../CV_v3/css/fonts/icomoon.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CV_v3/css/fonts/icomoon.woff" beforeDir="false" afterPath="$PROJECT_DIR$/../CV_v3/css/fonts/icomoon.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CV_v3/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../CV_v3/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CV_v3/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/../CV_v3/css/style.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CV_v3/css/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../CV_v3/css/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CV_v3/icomoon.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CV_v3/icomoon/demo.html" beforeDir="false" afterPath="$PROJECT_DIR$/../CV_v3/icomoon/demo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CV_v3/icomoon/fonts/icomoon.eot" beforeDir="false" afterPath="$PROJECT_DIR$/../CV_v3/icomoon/fonts/icomoon.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CV_v3/icomoon/fonts/icomoon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/../CV_v3/icomoon/fonts/icomoon.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CV_v3/icomoon/fonts/icomoon.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/../CV_v3/icomoon/fonts/icomoon.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CV_v3/icomoon/fonts/icomoon.woff" beforeDir="false" afterPath="$PROJECT_DIR$/../CV_v3/icomoon/fonts/icomoon.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CV_v3/icomoon/selection.json" beforeDir="false" afterPath="$PROJECT_DIR$/../CV_v3/icomoon/selection.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CV_v3/icomoon/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../CV_v3/icomoon/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CV_v3/img/Skills2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../CV_v3/img/Skills2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CV_v3/img/backgroung_image.png" beforeDir="false" afterPath="$PROJECT_DIR$/../CV_v3/img/backgroung_image.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CV_v3/img/chudomarket.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../CV_v3/img/chudomarket.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CV_v3/img/factorcorp.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../CV_v3/img/factorcorp.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CV_v3/img/home.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CV_v3/img/home2.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/../CV_v3/img/home2.JPG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CV_v3/img/serv1.png" beforeDir="false" afterPath="$PROJECT_DIR$/../CV_v3/img/serv1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CV_v3/img/servernaya.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../CV_v3/img/servernaya.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CV_v3/img/skills.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CV_v3/img/viber-brands.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CV_v3/img/web-background.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../CV_v3/img/web-background.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CV_v3/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../CV_v3/index.html" afterDir="false" />
+=======
+>>>>>>> 450fedc586c305dc4d8c8573bf388301ba8b05f0
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+<<<<<<< HEAD
+      <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DZ-1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../DZ-1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DZ-1/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/../DZ-1/debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app_kinopoisk/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/../app_kinopoisk/script.js" afterDir="false" />
+=======
+>>>>>>> 450fedc586c305dc4d8c8573bf388301ba8b05f0
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1QHOdWwwjdkX3d2ctSPCP9q4RL8" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="NewWatcherDialog.advanced.open" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.stylelint" value="true" />
+    <property name="node.js.path.for.package.stylelint" value="project" />
+    <property name="node.js.selected.package.stylelint" value="" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="watcher.settings" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.index.html (1)">
+    <configuration name="index.html (1)" type="JavascriptDebugType" nameIsGenerated="true" uri="http://localhost:63342/CV_v4/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="index.html" type="JavascriptDebugType" nameIsGenerated="true" uri="http://localhost:63342/CV_v3/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5951dd70-11e1-403e-b7d1-a83c526d6c88" name="Default Changelist" comment="" />
+      <created>1567424142462</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1567424142462</updated>
+      <workItem from="1567424143752" duration="8503000" />
+      <workItem from="1567502602440" duration="47000" />
+      <workItem from="1567762996595" duration="8094000" />
+      <workItem from="1568014934827" duration="4205000" />
+      <workItem from="1568025135226" duration="9168000" />
+      <workItem from="1568037004601" duration="44000" />
+      <workItem from="1568093910236" duration="26295000" />
+      <workItem from="1568182011865" duration="22505000" />
+      <workItem from="1568266469472" duration="1072000" />
+      <workItem from="1568272044369" duration="8920000" />
+      <workItem from="1568630383371" duration="99000" />
+      <workItem from="1568885674716" duration="1313000" />
+      <workItem from="1568887008321" duration="947000" />
+      <workItem from="1568891713039" duration="925000" />
+      <workItem from="1568892655118" duration="3218000" />
+      <workItem from="1568962002582" duration="5847000" />
+      <workItem from="1568967869827" duration="28000" />
+      <workItem from="1568969042955" duration="3000" />
+      <workItem from="1568969132608" duration="233000" />
+      <workItem from="1568969398317" duration="26000" />
+      <workItem from="1568969876110" duration="481000" />
+      <workItem from="1568970401450" duration="18000" />
+      <workItem from="1571730333631" duration="2511000" />
+      <workItem from="1571850928303" duration="146000" />
+<<<<<<< HEAD
+      <workItem from="1577189602261" duration="6659000" />
+=======
+      <workItem from="1571851369575" duration="5339000" />
+>>>>>>> 450fedc586c305dc4d8c8573bf388301ba8b05f0
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

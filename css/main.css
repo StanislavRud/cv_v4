@@ -1,0 +1,636 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto|Titillium+Web&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Titillium Web', sans-serif; }
+
+p {
+  font-size: 20px; }
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 1em;
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.5);
+  display: inline-block;
+  padding: 1rem 10rem;
+  border-radius: 15px;
+  color: #002440; }
+
+html {
+  scroll-behavior: smooth; }
+
+a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Titillium Web', sans-serif; }
+
+li {
+  list-style: none;
+  padding: 10px 0 10px; }
+
+body {
+  background: linear-gradient(to bottom right, #002440, #006CBF); }
+  body header {
+    width: 100%;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    background-color: #1a1a1a;
+    z-index: 1; }
+    body header .main_header {
+      max-width: 1366px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-around; }
+      body header .main_header .min_menu input, body header .main_header span {
+        display: none; }
+      body header .main_header img {
+        height: 100%; }
+      body header .main_header nav ul.menu_list {
+        display: flex; }
+        body header .main_header nav ul.menu_list li {
+          flex-grow: 1;
+          padding: 0;
+          height: 100%; }
+          body header .main_header nav ul.menu_list li a {
+            position: relative;
+            overflow: hidden;
+            display: block;
+            padding: 2rem 1.5rem;
+            will-change: color;
+            transition: color .25s ease-out;
+            font-weight: 700;
+            font-size: large;
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase; }
+          body header .main_header nav ul.menu_list li a:before, body header .main_header nav ul.menu_list li a:after {
+            content: "";
+            width: 0;
+            height: 3px;
+            background-color: #0089ff;
+            will-change: width;
+            transition: width .05s ease-out;
+            position: absolute;
+            bottom: 0; }
+          body header .main_header nav ul.menu_list li a:before {
+            left: 50%;
+            transform: translateX(-50%); }
+          body header .main_header nav ul.menu_list li a:after {
+            right: 50%;
+            transform: translateX(50%); }
+          body header .main_header nav ul.menu_list li a:hover:before, body header .main_header nav ul.menu_list li a:hover:after {
+            width: 100%;
+            transition-duration: .15s; }
+      body header .main_header nav:hover a:not(:hover) {
+        color: #0089ff; }
+  body .osn_container div {
+    height: 100%; }
+    body .osn_container div a {
+      display: block;
+      content: "";
+      height: 100px;
+      margin-top: -75px; }
+  body .osn_container .block_home {
+    height: 970px;
+    background-image: url("../img/servernaya.jpg");
+    background-attachment: fixed;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 135px; }
+    body .osn_container .block_home a {
+      display: block;
+      content: "";
+      height: 99px;
+      margin-top: -74px; }
+    body .osn_container .block_home .block_with_text {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      height: calc(100% - 100px); }
+      body .osn_container .block_home .block_with_text .home_text {
+        width: 400px;
+        height: 50%; }
+        body .osn_container .block_home .block_with_text .home_text h1 {
+          display: block;
+          position: absolute;
+          margin-top: 30px;
+          color: white;
+          font-size: 60px;
+          font-family: 'Roboto', sans-serif;
+          animation-duration: 1s;
+          animation-name: slidein;
+          text-shadow: 3px 4px 5px #000; }
+@keyframes slidein {
+  from {
+    margin-left: -200%; }
+  to {
+    margin-left: 0%; } }
+        body .osn_container .block_home .block_with_text .home_text p {
+          font-size: 2em;
+          color: white;
+          animation-duration: 1s;
+          animation-name: slidein2;
+          text-shadow: 3px 4px 5px #000; }
+@keyframes slidein2 {
+  from {
+    margin-top: -200%; }
+  to {
+    margin-top: 0%; } }
+  body .osn_container li:first-child {
+    margin-top: 55px; }
+  body .osn_container .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px 0 10px; }
+    body .osn_container .container a {
+      display: block;
+      content: "";
+      height: 100px;
+      margin: -75px 0 0; }
+  body .osn_container .About_me {
+    background-image: url("https://images.freeimages.com/images/large-previews/01a/technology-background-1632715.jpg");
+    background-size: cover;
+    padding-bottom: 15px; }
+    body .osn_container .About_me .about_me {
+      padding-top: 20px; }
+    body .osn_container .About_me a {
+      display: block;
+      content: "";
+      height: 55px;
+      margin: -58px 0 0; }
+    body .osn_container .About_me .container_about_me {
+      display: flex;
+      padding: 5px;
+      background-image: url("../img/home2.jpg");
+      background-size: cover;
+      justify-content: flex-end;
+      border-radius: 15px; }
+      body .osn_container .About_me .container_about_me img {
+        height: 1rem;
+        border-radius: 15px; }
+      body .osn_container .About_me .container_about_me .container_about_me_text {
+        border-radius: 5px;
+        padding: 1rem;
+        line-height: 1.5;
+        backdrop-filter: blur(10px);
+        background-color: rgba(255, 255, 255, 0.5);
+        margin: 1em;
+        width: 600px;
+        text-align: left;
+        text-indent: 1.5em; }
+  body .osn_container .my_skills {
+    background-image: url("../img/Skills2.jpg");
+    background-size: cover;
+    background-position-x: center; }
+    body .osn_container .my_skills a {
+      display: block;
+      content: "";
+      height: 74px;
+      margin-top: -74px; }
+    body .osn_container .my_skills .skills {
+      padding-top: 20px; }
+      body .osn_container .my_skills .skills .my_skills_container ul {
+        width: 60%;
+        margin: 1rem auto;
+        text-align: left;
+        border-radius: 5px;
+        padding: 1rem 2rem;
+        line-height: 1.5;
+        backdrop-filter: blur(10px);
+        background-color: rgba(255, 255, 255, 0.5); }
+        body .osn_container .my_skills .skills .my_skills_container ul li {
+          margin: 10px 0; }
+  body .osn_container .work_experience {
+    background-image: url("./../img/work_experience.jpg");
+    background-size: 100% 100%;
+    padding-bottom: 15px; }
+    body .osn_container .work_experience a {
+      display: block;
+      content: "";
+      height: 60px;
+      margin: -60px 0 0; }
+    body .osn_container .work_experience .factor, body .osn_container .work_experience .chudo {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row-reverse;
+      text-align: left;
+      padding: 5px;
+      line-height: 1.5;
+      align-items: end;
+      border-radius: 15px; }
+      body .osn_container .work_experience .factor img, body .osn_container .work_experience .chudo img {
+        width: 10%;
+        margin-left: 5px; }
+    body .osn_container .work_experience .factor {
+      background-image: url("../img/factorcorp.jpg");
+      background-size: cover;
+      margin-bottom: 25px; }
+      body .osn_container .work_experience .factor .factor_text {
+        border-radius: 5px;
+        padding: 1rem 2rem;
+        line-height: 1.5;
+        backdrop-filter: blur(10px);
+        background-color: rgba(255, 255, 255, 0.5);
+        margin: 3em; }
+        body .osn_container .work_experience .factor .factor_text img {
+          display: none; }
+    body .osn_container .work_experience .chudo {
+      background-image: url("../img/chudomarket.jpg"); }
+      body .osn_container .work_experience .chudo .chudo_text {
+        border-radius: 5px;
+        padding: 1rem 2rem;
+        line-height: 1.5;
+        backdrop-filter: blur(10px);
+        background-color: rgba(255, 255, 255, 0.5);
+        margin: 3em; }
+        body .osn_container .work_experience .chudo .chudo_text img {
+          display: none; }
+  body .osn_container li.education {
+    background-image: url("../img/bg_education.jpg");
+    background-size: cover; }
+    body .osn_container li.education a {
+      display: block;
+      content: "";
+      height: 75px;
+      margin: -75px 0 0; }
+    body .osn_container li.education .education_main_container .khai {
+      padding: 15px 0; }
+    body .osn_container li.education .education_khai, body .osn_container li.education .telesens_academy, body .osn_container li.education .nt_school, body .osn_container li.education .a_level {
+      border-radius: 5px;
+      padding: 1rem 2rem;
+      line-height: 1.5;
+      backdrop-filter: blur(10px);
+      background-color: rgba(255, 255, 255, 0.5);
+      margin-bottom: 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      body .osn_container li.education .education_khai img, body .osn_container li.education .telesens_academy img, body .osn_container li.education .nt_school img, body .osn_container li.education .a_level img {
+        width: 15%;
+        margin-right: 5px; }
+  body .osn_container li.my_works {
+    background-image: url("./../img/my_works.jpg");
+    background-size: 100% 100%; }
+    body .osn_container li.my_works .slider {
+      max-width: 1100px;
+      height: 700px;
+      padding: 10px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      body .osn_container li.my_works .slider .myWorks {
+        width: 100%;
+        height: 95%;
+        background-image: url("./../img/elem1.jpg");
+        transition: all 0.5s cubic-bezier(0.4, 0, 1, 1);
+        background-size: 100% auto;
+        border-radius: 10px; }
+        body .osn_container li.my_works .slider .myWorks a {
+          display: block;
+          text-align: center;
+          height: 100%; }
+      body .osn_container li.my_works .slider:hover div.prevSlide {
+        opacity: 1;
+        left: -42%; }
+      body .osn_container li.my_works .slider:hover div.nextSlide {
+        opacity: 1;
+        right: -42%; }
+      body .osn_container li.my_works .slider div.prevSlide, body .osn_container li.my_works .slider div.nextSlide {
+        position: relative;
+        top: -40%;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #ffffff78;
+        opacity: 0;
+        transition: all 0.5s; }
+      body .osn_container li.my_works .slider div.prevSlide {
+        left: -40%; }
+      body .osn_container li.my_works .slider div.nextSlide {
+        top: calc(-40% - 50px);
+        right: -40%; }
+      body .osn_container li.my_works .slider div.prevSlide:hover {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        cursor: pointer;
+        background-color: #ffffffcc; }
+      body .osn_container li.my_works .slider div.nextSlide:hover {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        cursor: pointer;
+        background-color: #ffffffcc; }
+      body .osn_container li.my_works .slider .slide_points {
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        content: '';
+        width: 100px;
+        height: 20px;
+        top: -11%; }
+        body .osn_container li.my_works .slider .slide_points .point {
+          width: 10px;
+          height: 10px;
+          background-color: black;
+          display: inline-block;
+          border-radius: 50%;
+          border: 2px solid black; }
+        body .osn_container li.my_works .slider .slide_points .select {
+          background-color: #fff; }
+      body .osn_container li.my_works .slider .navigation_slider {
+        height: 10%;
+        width: 20%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center; }
+  body .osn_container .Contacts {
+    background: url("../img/web-background.jpg"); }
+    body .osn_container .Contacts a {
+      display: block;
+      content: "";
+      height: 75px;
+      margin: -75px 0 0; }
+    body .osn_container .Contacts .container_contacts {
+      height: max-content; }
+      body .osn_container .Contacts .container_contacts ul {
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0;
+        backdrop-filter: blur(10px);
+        background-color: rgba(255, 255, 255, 0.5);
+        padding: 1rem 2rem;
+        border-radius: 15px; }
+        body .osn_container .Contacts .container_contacts ul li {
+          width: fit-content;
+          margin-bottom: 15px; }
+          body .osn_container .Contacts .container_contacts ul li p {
+            height: 100%; }
+            body .osn_container .Contacts .container_contacts ul li p a {
+              margin: 0;
+              height: 100%;
+              color: #002440;
+              font-size: 1.5rem; }
+            body .osn_container .Contacts .container_contacts ul li p a:hover {
+              text-shadow: 3px 4px 5px #000; }
+            body .osn_container .Contacts .container_contacts ul li p i {
+              margin-right: 10px; }
+        body .osn_container .Contacts .container_contacts ul li:first-child {
+          margin-top: 0; }
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("fonts/icomoon.eot?r76rei");
+  src: url("fonts/icomoon.eot?r76rei#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?r76rei") format("truetype"), url("fonts/icomoon.woff?r76rei") format("woff"), url("fonts/icomoon.svg?r76rei#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  margin-right: 10px;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-gmail:before {
+  content: "\e901";
+  color: #d14836; }
+
+.icon-viber:before {
+  content: "\e900";
+  color: #665cac; }
+
+.icon-phone:before {
+  content: "\e942"; }
+
+.icon-mobile:before {
+  content: "\e958";
+  color: black; }
+
+.icon-telegram:before {
+  content: "\ea95";
+  color: #0089ff; }
+
+.icon-github:before {
+  content: "\eab0";
+  color: black; }
+
+.icon-skype:before {
+  content: "\eac5";
+  color: #0089ff; }
+
+.icon-linkedin:before {
+  content: "\eac9";
+  color: #006CBF; }
+
+.icon-checkmark:before {
+  content: "\ea10"; }
+
+@media only screen and (max-width: 1048px) {
+  body header .main_header nav ul.menu_list li a {
+    padding: 2rem 1rem; } }
+@media only screen and (max-width: 1168px) {
+  body header .main_header nav ul.menu_list li a {
+    font-size: medium; } }
+@media only screen and (max-width: 1000px) {
+  body .osn_container .block_home {
+    height: 500px; } }
+@media only screen and (max-height: 480px) {
+  body .osn_container .block_home {
+    height: 500px; } }
+@media only screen and (max-width: 893px) {
+  body header {
+    height: 50px; }
+    body header .main_header {
+      justify-content: left;
+      height: 100%; }
+      body header .main_header nav {
+        position: relative;
+        left: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+        body header .main_header nav .min_menu {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          height: 100%; }
+          body header .main_header nav .min_menu ul.menu_list {
+            top: 50px;
+            left: -100px;
+            flex-direction: column;
+            justify-content: left;
+            position: absolute;
+            width: 190px;
+            background-color: black;
+            transform-origin: 0% 0%;
+            transform: translate(-100%, 0);
+            transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1); }
+            body header .main_header nav .min_menu ul.menu_list li a {
+              padding: 1rem; }
+          body header .main_header nav .min_menu span {
+            display: flex;
+            width: 29px;
+            height: 2px;
+            margin-bottom: 5px;
+            position: relative;
+            background: #ffffff;
+            border-radius: 3px;
+            z-index: 2;
+            transform-origin: 5px 0px;
+            transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease; }
+          body header .main_header nav .min_menu span:first-child {
+            transform-origin: 0% 0%; }
+          body header .main_header nav .min_menu span:nth-last-child(2) {
+            transform-origin: 0% 100%; }
+          body header .main_header nav .min_menu input:checked ~ span {
+            opacity: 1;
+            transform: rotate(45deg) translate(4px, 0px);
+            background: #36383F; }
+          body header .main_header nav .min_menu input:checked ~ span:nth-last-child(3) {
+            opacity: 0;
+            transform: rotate(0deg) scale(0.2, 0.2); }
+          body header .main_header nav .min_menu input:checked ~ span:nth-last-child(2) {
+            transform: rotate(-45deg) translate(0px, 8px); }
+        body header .main_header nav .min_menu input {
+          display: flex;
+          width: 30px;
+          height: 30px;
+          position: absolute;
+          cursor: pointer;
+          opacity: 0;
+          z-index: 5; }
+        body header .main_header nav .min_menu input[type="checkbox"]:checked ~ ul.menu_list {
+          transform: none;
+          left: -20px; }
+  body .osn_container li.block_home {
+    margin-top: 50px; }
+    body .osn_container li.block_home a {
+      height: 100px;
+      margin: -100px 0px 0px; }
+  body .osn_container li.About_me h2 {
+    margin-top: 0; }
+  body .osn_container li.About_me .container_about_me {
+    border-radius: 0; }
+    body .osn_container li.About_me .container_about_me .container_about_me_text {
+      margin: 0;
+      width: 100%; }
+  body .osn_container li.my_skills {
+    padding: 5px;
+    margin-top: 0;
+    background-position-x: center; }
+    body .osn_container li.my_skills a {
+      height: 66px;
+      margin: -38px 0px 0px; }
+    body .osn_container li.my_skills h2 {
+      margin: 0 0 1rem; }
+    body .osn_container li.my_skills .skills .my_skills_container ul {
+      margin: 0;
+      padding: 5px;
+      width: 100%; }
+  body .osn_container li.work_experience .factor, body .osn_container li.work_experience .chudo {
+    border-radius: 0; }
+  body .osn_container li.work_experience .factor {
+    margin-bottom: 5px; }
+    body .osn_container li.work_experience .factor img {
+      display: none; }
+    body .osn_container li.work_experience .factor .factor_text {
+      margin: 0;
+      padding: 10px;
+      display: flex;
+      flex-flow: wrap; }
+      body .osn_container li.work_experience .factor .factor_text img {
+        display: block;
+        margin-left: 0;
+        margin-right: 10px;
+        border-radius: 5px;
+        align-items: flex-start; }
+  body .osn_container li.work_experience .chudo img {
+    display: none; }
+  body .osn_container li.work_experience .chudo .chudo_text {
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    flex-flow: wrap; }
+    body .osn_container li.work_experience .chudo .chudo_text img {
+      display: block;
+      margin-left: 0;
+      margin-right: 10px;
+      align-items: flex-start; }
+  body .osn_container li.education {
+    padding: 5px; }
+    body .osn_container li.education .education_main_container h2 {
+      margin-top: 0; }
+    body .osn_container li.education .education_main_container .khai .education_khai, body .osn_container li.education .education_main_container .khai .telesens_academy, body .osn_container li.education .education_main_container .khai .nt_school, body .osn_container li.education .education_main_container .khai .a_level {
+      margin-bottom: 5px; }
+  body .osn_container li.my_works {
+    padding: 5px; }
+    body .osn_container li.my_works .slider {
+      padding: 0;
+      width: 100%; }
+      body .osn_container li.my_works .slider .myWorks {
+        background-size: cover; }
+      body .osn_container li.my_works .slider div.prevSlide, body .osn_container li.my_works .slider div.nextSlide {
+        top: -40%;
+        opacity: 1.0; }
+      body .osn_container li.my_works .slider div.nextSlide {
+        top: calc(-40% - 50px); }
+  body .osn_container li.Contacts {
+    height: max-content; }
+    body .osn_container li.Contacts .container_contacts {
+      padding: 5px; }
+      body .osn_container li.Contacts .container_contacts ul {
+        width: 100%; }
+        body .osn_container li.Contacts .container_contacts ul li p a {
+          font-size: 1.4rem; } }
+@media only screen and (max-width: 560px) {
+  .About_me, .my_skills, .work_experience, .education, .my_works, .Contacts {
+    padding: 0 !important; }
+    .About_me .container, .my_skills .container, .work_experience .container, .education .container, .my_works .container, .Contacts .container {
+      padding: 5px; }
+    .About_me h2, .my_skills h2, .work_experience h2, .education h2, .my_works h2, .Contacts h2 {
+      padding: 1rem 0;
+      width: 100%;
+      border-radius: 0; }
+
+  .my_skills {
+    padding: 0 !important; }
+    .my_skills .my_skills_container {
+      padding: 5px; }
+      .my_skills .my_skills_container a {
+        margin: 0; }
+      .my_skills .my_skills_container ul {
+        width: 100% !important; }
+
+  .education .khai {
+    padding: 5px; }
+
+  .Contacts .container_contacts {
+    padding: 5px; }
+    .Contacts .container_contacts ul {
+      width: 100%; } }
+@media only screen and (max-height: 460px) {
+  body header .main_header nav .min_menu ul.menu_list {
+    width: max-content; }
+    body header .main_header nav .min_menu ul.menu_list li a {
+      padding: 0.7rem;
+      width: 100%; } }
+
+/*# sourceMappingURL=main.css.map */
